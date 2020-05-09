@@ -132,6 +132,7 @@ exports.start = async ({ bishengConfigPath }) => {
     disableHostCheck: true,
     quiet: false,
     host: startParam.host,
+    proxy: startParam.proxy,
   }
   const server = new WebpackDevServer(compiler, serverOptions);
   // 第一次编译成功时： 打开页面
